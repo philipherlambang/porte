@@ -1452,6 +1452,7 @@ and (orientation : landscape) {
 
 .table td, .table th{
   vertical-align: middle !important;
+
 }
 
 .invoice-body th{
