@@ -1420,8 +1420,14 @@ and (orientation : landscape) {
   color:#fff;
 }
 
+.button-red{
+  background-color: #E05A42;
+  color:#fff;
+  border: none;
+}
+
 .button-green{
-  background-color: #62C29C;
+  background-color: #91C651;
   color:#fff;
   border: none;
 }
