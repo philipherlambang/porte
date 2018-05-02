@@ -1384,6 +1384,7 @@ and (orientation : landscape) {
 
 .invoice-top-nav{
   color:#333;
+  background-color: #F39231;
 }
 
 .invoice-top-nav p{
@@ -1430,6 +1431,17 @@ and (orientation : landscape) {
   color:#fff;
 }
 
+.button-white{
+  background: white;
+  color:#F39231;
+  border: none;
+}
+
+.button-white:hover{
+  background-color: #333;
+  color:#ffffff;
+}
+
 .invoice-header-right h3{
   margin-top: 0;
 }
@@ -1465,4 +1477,15 @@ and (orientation : landscape) {
 
 .background-light-gray{
   background:#f5f5f5;
+}
+
+/*invoice print*/
+@media print {
+  .hidden-print{
+    display: none;
+  }
+
+  .invoice-body{
+    width: 100%;
+  }
 }
