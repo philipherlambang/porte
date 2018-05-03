@@ -166,12 +166,17 @@
 
 .list-item h5{
   margin-bottom: 3px;
-  font-weight: 300;
+  color:#666;
+  font-size: 90%;
 }
 
 .mobile-nav .col-xs-2, .mobile-nav .col-xs-4{
   padding: 0 5px;
   margin-top: 5px;
+}
+
+.mobile-nav .btn{
+  border-radius: 2px !important;
 }
 
 @media screen and (max-width: 767px){
@@ -195,7 +200,7 @@
 /*invoice print*/
 @media print {
   .hidden-print{
-    display: none;
+    display: none !important;
   }
 
   .invoice-body{

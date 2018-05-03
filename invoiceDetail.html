@@ -17,10 +17,10 @@
     </head>
 
 <body style="background-color: #f5f5f5;" >
-  <nav class="navbar navbar-default navbar-fixed-top invoice-top-nav hidden-xs">
+  <nav class="navbar navbar-default navbar-fixed-top invoice-top-nav hidden-xs hidden-print">
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-xs-8 col-xs-offset-2">
           <p class="text-center">
             <a href="index.html"><img src="assets/img/porte_logo_trans.png" width="60" /></a>
             <button class="btn btn-default button-green">Log in to view all invoices</button>
@@ -33,11 +33,11 @@
     </div>
   </nav>
 
-  <nav class="navbar navbar-default navbar-fixed-top invoice-top-nav visible-xs mobile-nav">
+  <nav class="navbar navbar-default navbar-fixed-top invoice-top-nav visible-xs mobile-nav hidden-print">
     <div class="container">
       <div class="row">
         <div class="col-xs-4">
-          <buton class="btn btn-block button-orange"><i class="fa fa-home"></i> by Porte</buton>
+          <buton class="btn btn-block btn-default" style="padding-top: 4px;"><img src="assets/img/porte_logo_trans.png" width="40"></buton>
         </div>
         <div class="col-xs-2">
           <buton class="btn button-green btn-block"><i class="fa fa-sign-in-alt"></i></buton>
@@ -49,17 +49,17 @@
           <buton class="btn btn-default btn-block button-orange"><i class="fa fa-money-bill-alt"></i></buton>
         </div>
         <div class="col-xs-2">
-          <buton class="btn btn-default btn-block button-orange"><i class="fa fa-print"></i></buton>
+          <buton class="btn btn-default btn-block button-orange" onclick="window.print();"><i class="fa fa-print"></i></buton>
         </div>
       </div>
     </div>
   </nav>
   <div class="clearfix tiny-padding visible-xs"></div>
 
-  <nav class="navbar bg-orange-2 navbar-secondary hidden-xs">
+  <nav class="navbar bg-orange-2 navbar-secondary hidden-xs hidden-print">
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-xs-8 col-xs-offset-2">
           <p class="text-left pull-left">
             <span><b>OUTSTANDING</b> USD $98 is due on May 7, 2018</span>
           </p>
@@ -72,14 +72,14 @@
 
   <div class="container invoice-detail">
     <div class="row">
-      <div class="col-sm-2 hidden-print"></div>
-      <div class="col-sm-8 invoice-body">
+      <div class="col-xs-2 hidden-print"></div>
+      <div class="col-xs-8 invoice-body">
         <div class="row">
-          <div class="col-sm-3 logo-container">
+          <div class="col-xs-3 logo-container">
             <img src="assets/img/logo.png">
           </div>
-          <div class="col-sm-1"></div>
-          <div class="col-sm-8 invoice-header-right">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-8 invoice-header-right">
             <h3>Olympic</h3>
             <p>Tax Registration: 11-45677654567</p>
             <p><a href="#" class="text-bold">http://olympic.com</a></p>
@@ -97,10 +97,10 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-2 hidden-print"></div>
-      <div class="col-sm-8 invoice-body">
+      <div class="col-xs-2 hidden-print"></div>
+      <div class="col-xs-8 invoice-body">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-xs-4">
             <b>Billed to</b>
             <p>Philip Herlambang</p>
             <p>Kufed Pte. Ltd</p>
@@ -109,13 +109,13 @@
             </address>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-xs-4">
             <p>Billing Number: <b>1803000015</b></p>
             <p>Terms: <b>7 days</b></p>
             <p class="text-red"><b>Due Date: March 29, 2018</b></p>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-xs-4">
             <p><b>Remit Payment To:</b></p>
             <p><b>Chase</b></p>
             <p>Routing Number: <b>0114015331111222233331111</b></p>
@@ -124,7 +124,7 @@
       </div>
     </div>
 
-    <div class="panel panel-default visible-xs list-item">
+    <!-- <div class="panel panel-default visible-xs list-item hidden-print">
       <div class="panel-body">
         <h5>Description: </h5>
         <p class="text-bold">Marc Jacobs Beauty Eye-Conic MultiFinish Eyeshadow Palette</p>
@@ -136,13 +136,13 @@
         <p class="text-bold">$ 0.00</p>
         <p class="text-bold">Total: $ 98.00</p>
       </div>
-    </div>
+    </div> -->
 
-    <div class="row hidden-xs">
-      <div class="col-sm-2 hidden-print"></div>
-      <div class="col-sm-8 col-xs-12 invoice-body">
+    <div class="row">
+      <div class="col-xs-2 hidden-print"></div>
+      <div class="col-xs-8 col-xs-12 invoice-body">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-xs-12">
             <table class="table table-bordered">
               <tr>
                 <th>#</th>
