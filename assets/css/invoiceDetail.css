@@ -58,6 +58,11 @@
   border: none;
 }
 
+.button-red:hover{
+  background-color: #333;
+  color:#fff;
+}
+
 .button-green{
   background-color: #91C651;
   color:#fff;
@@ -149,6 +154,42 @@
   margin-left: -5px;
   margin-top: -10px;
   font-size: 10px;
+}
+
+.tiny-padding{
+  padding: 5px 0;
+}
+
+.list-item p{
+  margin-bottom: 5px;
+}
+
+.list-item h5{
+  margin-bottom: 3px;
+  font-weight: 300;
+}
+
+.mobile-nav .col-xs-2, .mobile-nav .col-xs-4{
+  padding: 0 5px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 767px){
+  .logo-container{
+    margin-bottom: 20px;
+  }
+
+  .invoice-detail{
+    margin-top: 50px;
+  }
+
+  .panel{
+    margin-top: 20px;
+  }
+
+  .panel.panel-default{
+    border: none !important;
+  }
 }
 
 /*invoice print*/

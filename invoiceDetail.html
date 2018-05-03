@@ -10,20 +10,20 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico">
     <title>Invoice Detail - Porte</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/invoiceDetail.css" rel="stylesheet">
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     </head>
 
 <body style="background-color: #f5f5f5;" >
-  <nav class="navbar navbar-default navbar-fixed-top invoice-top-nav">
+  <nav class="navbar navbar-default navbar-fixed-top invoice-top-nav hidden-xs">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
           <p class="text-center">
             <a href="index.html"><img src="assets/img/porte_logo_trans.png" width="60" /></a>
-            <button class="btn btn-default button-green">Login</button>
+            <button class="btn btn-default button-green">Log in to view all invoices</button>
             <button class="btn btn-default button-orange" id="pdfGenerate">Save as PDF</button>
             <button class="btn btn-default button-orange" onclick="window.print();">Print</button>
             <button class="btn btn-default button-red">Pay Now</button>
@@ -33,7 +33,30 @@
     </div>
   </nav>
 
-  <nav class="navbar bg-orange-2 navbar-secondary">
+  <nav class="navbar navbar-default navbar-fixed-top invoice-top-nav visible-xs mobile-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+          <buton class="btn btn-block button-orange"><i class="fa fa-home"></i> by Porte</buton>
+        </div>
+        <div class="col-xs-2">
+          <buton class="btn button-green btn-block"><i class="fa fa-sign-in-alt"></i></buton>
+        </div>
+        <div class="col-xs-2">
+          <buton class="btn btn-default btn-block button-orange"><i class="fa fa-file-pdf"></i></buton>
+        </div>
+        <div class="col-xs-2">
+          <buton class="btn btn-default btn-block button-orange"><i class="fa fa-money-bill-alt"></i></buton>
+        </div>
+        <div class="col-xs-2">
+          <buton class="btn btn-default btn-block button-orange"><i class="fa fa-print"></i></buton>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="clearfix tiny-padding visible-xs"></div>
+
+  <nav class="navbar bg-orange-2 navbar-secondary hidden-xs">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
@@ -101,7 +124,21 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="panel panel-default visible-xs list-item">
+      <div class="panel-body">
+        <h5>Description: </h5>
+        <p class="text-bold">Marc Jacobs Beauty Eye-Conic MultiFinish Eyeshadow Palette</p>
+        <h5>Unit Price</h5>
+        <p class="text-bold">$ 49.00</p>
+        <h5>Quantity</h5>
+        <p class="text-bold">2.00 Unit</p>
+        <h5>Discount</h5>
+        <p class="text-bold">$ 0.00</p>
+        <p class="text-bold">Total: $ 98.00</p>
+      </div>
+    </div>
+
+    <div class="row hidden-xs">
       <div class="col-sm-2 hidden-print"></div>
       <div class="col-sm-8 col-xs-12 invoice-body">
         <div class="row">
