@@ -58,6 +58,11 @@
   border: none;
 }
 
+.button-red:hover{
+  background-color: #333;
+  color:#fff;
+}
+
 .button-green{
   background-color: #91C651;
   color:#fff;
@@ -128,7 +133,7 @@
 .navbar-secondary p{
   line-height: 50px;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -136,6 +141,55 @@
 .navbar-secondary i{
   line-height: 50px;
   font-size: 24px;
+}
+
+.badge-porte{
+  background: #CC2400;
+  line-height: 20px;
+  min-width: 20px;
+  display: inline-block;
+  padding: 0;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: -5px;
+  margin-top: -10px;
+  font-size: 10px;
+}
+
+.tiny-padding{
+  padding: 5px 0;
+}
+
+.list-item p{
+  margin-bottom: 5px;
+}
+
+.list-item h5{
+  margin-bottom: 3px;
+  font-weight: 300;
+}
+
+.mobile-nav .col-xs-2, .mobile-nav .col-xs-4{
+  padding: 0 5px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 767px){
+  .logo-container{
+    margin-bottom: 20px;
+  }
+
+  .invoice-detail{
+    margin-top: 50px;
+  }
+
+  .panel{
+    margin-top: 20px;
+  }
+
+  .panel.panel-default{
+    border: none !important;
+  }
 }
 
 /*invoice print*/
