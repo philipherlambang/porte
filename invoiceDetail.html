@@ -20,7 +20,7 @@
   <nav class="navbar navbar-default navbar-fixed-top invoice-top-nav hidden-xs hidden-print">
     <div class="container">
       <div class="row">
-        <div class="col-xs-8 col-xs-offset-2">
+        <div class="col-sm-8 col-sm-offset-2">
           <p class="text-center">
             <a href="index.html"><img src="assets/img/porte_logo_trans.png" width="60" /></a>
             <button class="btn btn-default button-green">Log in to view all invoices</button>
@@ -59,7 +59,7 @@
   <nav class="navbar bg-orange-2 navbar-secondary hidden-xs hidden-print">
     <div class="container">
       <div class="row">
-        <div class="col-xs-8 col-xs-offset-2">
+        <div class="col-sm-8 col-sm-offset-2">
           <p class="text-left pull-left">
             <span><b>OUTSTANDING</b> USD $98 is due on May 7, 2018</span>
           </p>
@@ -71,8 +71,36 @@
   </nav>
 
   <div class="container invoice-detail">
-    <div class="row">
-      <div class="col-xs-2 hidden-print"></div>
+
+    <!-- hidden print -->
+    <div class="row hidden-print">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 invoice-body">
+        <div class="row">
+          <div class="col-sm-3 logo-container">
+            <img src="assets/img/logo.png">
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-8 invoice-header-right">
+            <h3>Olympic</h3>
+            <p>Tax Registration: 11-45677654567</p>
+            <p><a href="#" class="text-bold">http://olympic.com</a></p>
+            <address>
+              <p><strong>Address</strong>: <span>11100 South Avalon Boulevard<br /> Los Angeles, California 90061</span>
+            </address>
+            <p class="hidden-print"><span>Phone: </span><a href="tel:111-213-1000" class="text-bold">111-213-1000</a></p>
+            <p class="hidden-print"><span>Email: </span><a href="mailto:nicodiangelo@gmail.com" class="text-bold">nicodiangelo@gmail.com</a></p>
+
+            <p class="visible-print"><span>Phone: </span><b>111-213-1000</b></p>
+            <p class="visible-print"><span>Email: </span><b>nicodiangelo@gmail.com test</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- visible print -->
+    <div class="row visible-print">
+      <div class="col-xs-2"></div>
       <div class="col-xs-8 invoice-body">
         <div class="row">
           <div class="col-xs-3 logo-container">
@@ -96,8 +124,39 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-xs-2 hidden-print"></div>
+
+    <!-- hidden print -->
+    <div class="row hidden-print">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 invoice-body">
+        <div class="row">
+          <div class="col-sm-4">
+            <b>Billed to</b>
+            <p>Philip Herlambang</p>
+            <p>Kufed Pte. Ltd</p>
+            <address>
+              Jl Bangka XI no 17<br /> Jakarta Selatan, Jakarta 12950 Indonesia
+            </address>
+          </div>
+
+          <div class="col-sm-4">
+            <p>Billing Number: <b>1803000015</b></p>
+            <p>Terms: <b>7 days</b></p>
+            <p class="text-red"><b>Due Date: March 29, 2018</b></p>
+          </div>
+
+          <div class="col-sm-4">
+            <p><b>Remit Payment To:</b></p>
+            <p><b>Chase</b></p>
+            <p>Routing Number: <b>0114015331111222233331111</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- visible print -->
+    <div class="row visible-print">
+      <div class="col-xs-2"></div>
       <div class="col-xs-8 invoice-body">
         <div class="row">
           <div class="col-xs-4">
@@ -139,28 +198,28 @@
     </div> -->
 
     <div class="row">
-      <div class="col-xs-2 hidden-print"></div>
-      <div class="col-xs-8 col-xs-12 invoice-body">
+      <div class="col-sm-2 hidden-print"></div>
+      <div class="col-sm-8 col-xs-12 invoice-body">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-sm-12">
             <table class="table table-bordered">
               <tr>
-                <th>#</th>
+                <th class="hidden-xs">#</th>
                 <th width="300">Description</th>
                 <th class="text-right">Unit Price</th>
                 <th class="text-center">Quantity</th>
-                <th class="text-center">UoM</th>
-                <th class="text-right">Discount</th>
+                <th class="text-center hidden-xs">UoM</th>
+                <th class="text-right hidden-xs">Discount</th>
                 <th class="text-right">Total</th>
               </tr>
 
               <tr>
-                <td>1</td>
+                <td class="hidden-xs">1</td>
                 <td>Marc Jacobs Beauty Eye-Conic MultiFinish Eyeshadow Palette</td>
                 <td class="text-right">$ 49.00</td>
                 <td class="text-center">2.00</td>
-                <td class="text-center">UN</td>
-                <td class="text-right">$ 0.00</td>
+                <td class="text-center hidden-xs">UN</td>
+                <td class="text-right hidden-xs">$ 0.00</td>
                 <td class="text-right">$ 98.00</td>
               </tr>
             </table>
